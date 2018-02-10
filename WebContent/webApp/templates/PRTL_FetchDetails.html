@@ -1,0 +1,64 @@
+<div class="padding20px">
+	<div class="subHeader">Details for {{fetchCtrl.patient.name}}:</div>
+	<div class="table" id="DetailsTable">
+		<div class="row">
+			<div class="cell">Patient ID:</div>
+			<div class="cell">{{fetchCtrl.patient.id}}</div>
+		</div>
+		<div class="row">
+			<div class="cell">Blood Group:</div>
+			<div class="cell">{{fetchCtrl.patient.bloodGroup}}</div>
+		</div>
+		<div class="row">
+			<div class="cell">Height:</div>
+			<div class="cell">{{fetchCtrl.patient.height}}</div>
+		</div>
+		<div class="row">
+			<div class="cell">Weight:</div>
+			<div class="cell">{{fetchCtrl.patient.weight}}</div>
+		</div>
+		<div class="row">
+			<div class="cell">Blood Pressure:</div>
+			<div class="cell">{{fetchCtrl.patient.bloodPressure}}</div>
+		</div>
+		<div class="row">
+			<div class="cell">Past Diseases:</div>
+			<div class="cell">{{fetchCtrl.patient.pastDiseases}}</div>
+		</div>
+		<div class="row">
+			<div class="cell">Allergies:</div>
+			<div class="cell">{{fetchCtrl.patient.allergies}}</div>
+		</div>
+		<div class="row">
+			<div class="cell">Current Medications:</div>
+			<div class="cell">{{fetchCtrl.patient.currentMedications}}</div>
+		</div>
+		<div class="row">
+			<div class="cell">Appointment Date:</div>
+			<div class="cell">{{fetchCtrl.patient.appointmentDate}}</div>
+		</div>
+	</div>
+	<!-- Modal -->
+	<div id="alertModal" class="modal fade" role="dialog" data-backdrop="static">
+	  <div class="modal-dialog">
+	
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <!-- <div class="modal-header">
+	        <h4 class="modal-title">No Record found !</h4>
+	      </div> -->
+	      <div class="modal-body t5">
+	        <p>No Record found ! Please try again.</p>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-primary" data-dismiss="modal" ng-click="fetchCtrl.goHome()">Try Again</button>
+	      </div>
+	    </div>
+	
+	  </div>
+	</div>
+	<!-- Button -->
+	<div>
+		<button class="btn btn-default" ng-click="fetchCtrl.goHome()">Go Back</button>
+	</div>
+</div>

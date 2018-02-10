@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="ISO-8859-1">
+	<title>Appointment Management</title>
+	<link rel="stylesheet" href="webApp/lib/bootstrap.min.css">
+	<link rel="stylesheet" href="webApp/css/app.css">
+</head>
+<body ng-app="hospitalAppointment">
+	<header>
+		<div ng-include="'webApp/templates/PRTL_Header.html'"></div>
+	</header>
+	<article>
+		<div ui-view></div> <!-- directive for dynamic content display  Replaces states from app.js-->
+	</article>
+	<footer></footer>
+
+
+	<script src="webApp/lib/angular.js"></script>
+	<script src="webApp/lib/angular-ui-router.js"></script>
+	<script src="webApp/lib/jquery-1.12.3.min.js"></script>
+	<script src="webApp/lib/bootstrap.min.js"></script>
+	<script src="webApp/lib/date.js"></script>
+	<script src="webApp/js/app.js"></script>
+	<script src="webApp/js/controllers/CTRL_Home.js"></script>
+	<script src="webApp/js/controllers/CTRL_Registration.js"></script>
+	<script src="webApp/js/controllers/CTRL_FetchDetails.js"></script>
+	<script src="webApp/js/controllers/CTRL_Main.js"></script>
+</body>
+</html>

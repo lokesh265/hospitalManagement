@@ -1,0 +1,119 @@
+.table{
+	display: table;
+	width: 100%;
+	/* padding: 20px 0px 20px 10px; */
+	border: 1px solid lavenderblush;
+	border-radius: 20px;
+	border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.row{
+	display: table-row;
+}
+.row:nth-child(even) {
+    background-color: #dddddd;
+}
+#AppointmentTable{
+	border-radius: 65px;
+	border: 1px solid antiquewhite;
+    padding: 59px;
+}
+#AppointmentTable .row:nth-child(even) {
+    background-color: inherit;
+}
+.cell{
+	display: table-cell;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	width: 44%;
+}
+.paddingBottom20px{
+	padding-bottom: 20px;
+}
+.paddingBottom10px{
+	padding-bottom: 10px;
+}
+.paddingTop20px{
+	padding-top: 20px;
+}
+.paddingLeft20px{
+	padding-left: 20px;
+}
+.mainHeader{
+	padding: 20px 20px 20px 20px;
+    font-size: 35px;
+    font-family: serif;
+    border: 1px dotted thistle;
+    background-color: darkgrey;
+}
+.subHeader{
+	font-size: 18px;
+    font-family: sans-serif;
+}
+.padding20px{
+	padding: 20px;
+}
+.paddingLeft10px{
+	padding-left: 10px;
+}
+#DetailsTable{
+	font-family: monospace;
+}
+select, input{
+	height: 30px;
+	width: 200px;
+}
+.textCenter{
+	text-align: center;
+}
+.paddingTop20px{
+	padding-top: 20px;
+}
+textarea{
+	width: 200px;
+}
+.cadetBlueBackground{
+	background-color: cadetblue;
+}
+.inline{
+	 display: inline-block;
+}
+.t1{
+	font-size: 16px;
+}
+.t2{
+	font-size: 22px;
+    font-family: serif;
+    color: floralwhite;
+}
+.t3{
+	font-size: 16px;
+    color: greenyellow;
+}
+.t4{
+	font-size: 16px;
+    color: firebrick;
+}
+.t5{
+	font-size: 18px;
+    font-family: serif;
+    font-weight: 500;
+}
+.floatRight{
+	float: right;
+}
+.marginLeft60px{
+	margin-left: 60px;
+}
+.paddingTop60px{
+	padding-top: 60px;
+}
+.marginRight70px{
+	margin-right: 70px;
+}
+.modal-header{
+	background-color: darkgrey;
+}
+form{
+	width: 80%;
+}

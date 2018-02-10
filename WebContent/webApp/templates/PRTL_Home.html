@@ -1,0 +1,16 @@
+<div class="padding20px">
+	<div class="paddingBottom20px">
+		<div ng-if="homeCtrl.validId" class="alert alert-warning">Please enter a valid Patient ID.</div>
+		<div>If you have already visited the hospital before, please enter your Patient ID in the box below:</div>
+		<div>
+			<span><input placeholder="Enter Patient ID" type="number" ng-model="$parent.patientId" /></span>
+			<span class="paddingLeft10px"><button class="btn btn-primary" ng-click="homeCtrl.getPatientDetails()">Get your details</button></span>
+		</div>
+	</div>
+	<div class="paddingBottom20px">
+		<div>If you are visiting the hospital for the first time, please click on Register button below:</div>
+		<div>
+			<button class="btn btn-primary" ui-sref="main.register">Register</button>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,79 @@
+<div class="padding20px cadetBlueBackground">
+	<div class="subHeader">Registration</div>
+	<div ng-class="{t3:registrationCtrl.msgColor==true, t4:registrationCtrl.msgColor==false}">{{registrationCtrl.message}}</div>
+	<div class="paddingBottom20px">Please enter the following information:</div>
+	<form name="Registration">
+	<div class="inline">
+		<div class="table t1">
+			<div class="row">
+				<div class="cell  ">Name </div>
+				<div class="cell">
+					<input name="name" type="text" ng-model="registrationCtrl.patient.name" required/>
+				</div>
+			</div>
+			<div class="row"> 
+				<div class="cell  ">Blood Group</div>
+				<div class="cell">
+					<select name="bloodGroup" ng-model="registrationCtrl.patient.bloodGroup" required>
+						<!-- <option value="--Select--">--Select--</option> -->
+						<option ng-repeat="bg in registrationCtrl.bGList">{{bg}}</option>
+					</select>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell  ">Height</div>
+				<div class="cell">
+					<input name="height" type="number" step="0.1" ng-model="registrationCtrl.patient.height" required/>(in foot)
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell  ">Weight</div>
+				<div class="cell">
+					<input name="weight" type="number" step="0.1" ng-model="registrationCtrl.patient.weight" required/>(in Kg)
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell  ">Blood Pressure</div>
+				<div class="cell">
+					<input name="bloodPressure" type="number" ng-model="registrationCtrl.patient.bloodPressure" required/>(in mmHg)
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell  ">Past Diseases</div>
+				<div class="cell">
+					<textarea name="pastDiseases" ng-model="registrationCtrl.patient.pastDiseases" required></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell  ">Allergies</div>
+				<div class="cell">
+					<textarea name="allergies" ng-model="registrationCtrl.patient.allergies" required></textarea>
+				</div>
+			</div>
+			<div class="row">
+				<div class="cell  ">Current Medications</div>
+				<div class="cell">
+					<textarea name="currentMedications" ng-model="registrationCtrl.patient.currentMedications" required></textarea>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="inline floatRight marginLeft60px paddingTop60px">
+		<div id="AppointmentTable" class="">
+			<div class="t2">Appointment</div>
+			<div class="">
+				<div><input name="appointment" type="date" ng-model="registrationCtrl.patient.appointmentDate" required 
+				class="datepicker" data-date-format="mm/dd/yyyy" min="{{registrationCtrl.today}}"></div>
+			</div>
+		</div>
+	</div>
+	<div class="textCenter">
+		<div class="inline">
+			<button class="btn btn-default" ng-click="registrationCtrl.goHome()">Go Back</button>
+		</div>
+		<div class="inline paddingLeft20px">
+			<button class="btn btn-primary" ng-click="registrationCtrl.submit()" ng-disabled="Registration.$invalid">Submit</button>
+		</div>
+	</div>
+	</form>
+</div>
